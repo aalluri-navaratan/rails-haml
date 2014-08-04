@@ -1,0 +1,20 @@
+.row-md-12.row-pull-2
+  .col-md-6
+    .row.col-md-10.row-md-push-2
+      - if user_signed_in?
+        %img{:alt => "Edit Entry", :height => "150", :src => "/assets/anil.jpg", :width => "150"}
+          .row
+            %article.col-lg-12
+              %h1 Our Service
+              %p.text-justify
+                we strongly believe is what everything revolves around. Secondly, we focus on system cost effective way of delivering the solution.ypur’
+          %br
+            %br
+              %hr
+                %footer.row
+                  %p ©Copyright 2014 by Navaratan Technologies.All Rights Reserved.
+                %br
+                  %br
+      - else
+        %h1 Login plz
+        

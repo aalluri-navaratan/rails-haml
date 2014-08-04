@@ -1,0 +1,32 @@
+.container
+  .row
+    .col-lg-10
+      / comment
+      = form_for(resource, as: resource_name, url: session_path(resource_name)) do |user|
+        %div{style: "margin:0;padding:0;display:inline"}
+          %input{name: "utf8", type: "hidden", value: "✓"}/
+          %input{name: "authenticity_token", type: "hidden", value: "B1TuNwFttqwyi00Yz/h3t746UZXcJIeDlasaf2pnE4o="}/
+        %h1 Member Login
+        %legend
+          %h4
+            If you are not a member yet please become a member
+            %a{href: "/users/new"} here
+            to Sign In
+        %h4
+          - if flash[:notice]
+            = h flash[:notice]
+        .form-group.row
+          = user.label :email, class: "string optional control-label control-label col-md-2 col-lg-2"
+          .col-md-4.col-lg-4
+            = user.text_field :email, autofocus: true, class: "form-control", size:"70"
+        .form-group.row
+          = user.label :password, class: "string optional control-label control-label col-md-2 col-lg-2"
+          .col-md-4.col-lg-4
+            = user.password_field :password, autocomplete: "off",class: "form-control"
+        - if devise_mapping.rememberable?
+          .form-group.row
+            = user.check_box :remember_me
+            = user.label :remember_me
+        = user.submit "Sign in", class: "btn btn-primary", style: "margin-left: 17%"
+      = render "devise/shared/links"
+      

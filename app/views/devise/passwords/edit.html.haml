@@ -1,0 +1,16 @@
+.container
+  .row
+    .col-lg-10
+      %h2 Change your password
+      = form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :put }) do |user|
+        = devise_error_messages!
+        = user.hidden_field :reset_password_token
+        .form-group.row
+          = user.password_field :password, autofocus: true, autocomplete: "off", class: "string optional control-label control-label col-md-2 col-lg-2"
+          .col-md-4.col-lg-4
+            = user.text_field :email, autofocus: true, class: "form-control", size:"70"
+          = user.label :password_confirmation, "Confirm new password",class: "string optional control-label control-label col-md-2 col-lg-2"
+          .col-md-4.col-lg-4
+            = user.password_field :password_confirmation, autocomplete: "off",class: "form-control"
+          = user.submit "Change my password", class: "btn btn-primary", style: "margin-left: 17%"
+= render "devise/shared/links"

@@ -1,0 +1,19 @@
+%b Image:
+= image_tag(@order.image.url(:small))
+%b Document:
+= @order.document_file_name
+%b Audio:
+= @order.audio_file_name
+%p#notice= notice
+%p
+  %strong Image:
+  = @music.image
+%p
+  %strong Document:
+  = @music.document
+%p
+  %strong Audio:
+  = @music.audio
+= link_to 'Edit', edit_music_path(@music)
+|
+\#{link_to 'Back', musics_path}

@@ -11,9 +11,9 @@
       .col-md-2
         - if user_signed_in?
           = render :partial => "sidebar"
-      - else
-    .row.col-md-10
-      .well
-        %p.alert= alert
-        = yield
-        
+        - else
+      .row.col-md-10
+        .well
+          %p.alert= alert
+          = yield
+          

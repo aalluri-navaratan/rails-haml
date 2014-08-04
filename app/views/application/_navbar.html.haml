@@ -1,22 +1,22 @@
-%nav.navbar.navbar-inverse{:role => "navigation"}
+%nav.navbar.navbar-inverse{role: "navigation"}
   .nav.navbar-header
-    %a.navbar-brand{:href => "contactsnew"} Contact
+    %a.navbar-brand{href: "/contacts/new"} Contact
   #bs-example-navbar-collapse-1.collapse.navbar-collapse
     %ul.nav.navbar-nav
       %li#test2.dropdown
-        %a.dropdown{"data-toggle" => "dropdown", :href => "#"}
+        %a.dropdown{"data-toggle" => "dropdown", href: "#"}
           %h5
             Produts
             %span.caret
-        %ul#test3.dropdown-menu{"aria-labelledby" => "dropdownMenu", :role => "menu"}
+        %ul#test3.dropdown-menu{"aria-labelledby" => "dropdownMenu", role: "menu"}
           %li
-            %a{:href => "about.html"}
+            %a{href: "http://navaratan.com/home/aboutus"}
               %h5 About Us
           %li
-            %a{:href => "service.html"}
-              %h5 Management Team
+            %a{href: "http://navaratan.com/home/services"}
+              %h5 Services
           %li
-            %a{:href => "#"}
+            %a{href: "http://navaratan.com/home/careers"}
               %h5 Careers
     .nav.navbar-nav.pull-right
       - if user_signed_in?
@@ -28,6 +28,4 @@
       - else
         = link_to "Sign up", new_user_registration_path
         = link_to "Login", new_user_session_path
-%hr
-
-  
+%hr/

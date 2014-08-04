@@ -1,5 +1,5 @@
 .container
-  .col-lg-10.col-lg-push-5
+  .col-lg-7.col-lg-push-2
     .row
       .form-group
         .col-md-9
@@ -7,7 +7,7 @@
         .col-md-3
           = link_to "Back", gadgets_path, class: 'btn btn-primary'
           = gadget.submit "Save", class: 'btn btn-primary'
-    %hr/
+    %br
     .col-lg-8
       .row
         .form-group
@@ -120,7 +120,7 @@
                                   .col-md-7
                                     = gadget.text_area :explanation_by_evaluator, class: 'form-control input-md', rows: 4
                               %br
-                                %hr/
+                                /%hr/
                                 .row
                                   .form-group
                                     %label.col-md-4.control-label Name of evaluator(NRC)

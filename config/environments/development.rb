@@ -36,4 +36,5 @@ config.action_mailer.default_url_options = { host: 'localhost:3000' }
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+  config.secret_key = 'ef71b4f294529737d9b9c68d62cef9df75b82cc67709a937c9dc3ecf4e7e3462e4d2818798d8bb299303d42c1cbeb2746ea20ad740078492eb65f2d639615bc0'
 end

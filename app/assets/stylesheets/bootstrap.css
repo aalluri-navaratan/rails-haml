@@ -5,6 +5,11 @@
  */
 
 /*! normalize.css v3.0.0 | MIT License | git.io/normalize */
+.new_user#new_user
+{
+  min-height:770px; 
+  min-width:503px;
+}
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;

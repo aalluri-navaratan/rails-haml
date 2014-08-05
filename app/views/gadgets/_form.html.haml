@@ -98,6 +98,7 @@
                               .col-md-7
                                 = gadget.text_area :scientific_descrition, class: 'form-control input-md', rows: 4
                           %br
+                          %br
                             .row
                               .form-group
                                 %label.col-md-4.control-label QuaLiFY area of interest
@@ -114,11 +115,13 @@
                                         = gadget.check_box(:qualfiy_area_interest, { :multiple => true }, a_value.id, nil)
                                         = a_value.name
                             %br
+                            %br
                               .row
                                 .form-group
                                   %label.col-md-4.control-label Explanation by evaluator(NRC)
                                   .col-md-7
                                     = gadget.text_area :explanation_by_evaluator, class: 'form-control input-md', rows: 4
+                              %br
                               %br
                                 /%hr/
                                 .row
@@ -127,6 +130,7 @@
                                     .col-md-7
                                       = gadget.text_field :name, class: 'form-control input-md', |
                                         id: 'fieldwidth'                                         |
+                                %br
                                 %br
                                   .row
                                     .form-group

@@ -1,15 +1,3 @@
-/*!
- * Bootstrap v3.1.1 (http://getbootstrap.com)
- * Copyright 2011-2014 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
-
-/*! normalize.css v3.0.0 | MIT License | git.io/normalize */
-.new_user#new_user
-{
-  min-height:770px; 
-  min-width:503px;
-}
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -17,8 +5,7 @@ html {
 }
 body {
   margin: 0;
-  background-color: #C6C1CF;
-}
+ }
 article,
 aside,
 details,
@@ -27,7 +14,7 @@ figure,
 footer,
 header,
 hgroup,
-main,
+main,hr
 nav,
 section,
 summary {
